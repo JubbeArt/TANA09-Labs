@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+
+\setcounter{section}{2}
+\subsection{}
+$$\mu = 2^{-53} \text{ (16 decimal digits)}$$
+$$t = 52$$
+
+\subsection{}
+$$0.5\cdot 10^{-16}$$
+$$\text{Correct decimal digits: }16$$
+
+\subsection{}
+$$16$$
+
+\subsection{}
+$$3 =  \text{(0)(100 0000 0000) (1000 ....}$$
+$$\text{sign exp fractal}$$
+
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+
+\subsection{}
+$$x\approx 1.6 \cdot 10^{-8}$$
+$$\text{Error grows towards 1 for very small x-values}$$
+
+\subsection{}
+$$\text{Error decreases as x goes to 0}$$
+
+\subsection{}
+
+$$\text{There is no replement of operators in the rewritten form (e.g. to remove cancellation)}$$
+
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+
+\subsection{}
+
+$$\text{(1) } |2\cos(x)| > 1 \text{ for } x\approx 0.65 \text{, will not converge}$$
+
+$$\text{(2) } |-\frac{1}{\sqrt{1-x}\cdot2\sqrt{x}}| > 1 \text{ for } x\approx 0.65 \text{, will not converge}$$
+
+\subsection{}
+$\varphi_1$ alternatives between the left side and right side of the root and converges VERY slowly. \\
+$\varphi_2$ becomes complex but the real part converges similarly to $\varphi_1$.
+
+\subsection{}
+$$df=@(x) 2*x - 4*cos(x)$$
+
+\subsection{}
+Because thats how much the answer changes every iteration. If that's below our tolerance, we no longer care.
+
+\subsection{}
+6 iterations, $\bar{x}= 1.933753762827021$
+
+\subsection{}
+There seems to be quadratic convergens. The error estimate is good.
+
+\subsection{}
+$$f = @(x) sqrt(1+x).*exp(x/2)-2*sin(2*x).*(x+x.^2);$$
+$$fzero(f, 1.5)$$
+$$1.319781106851625$$
+
+\subsection{}
+19
+
+\subsection{}
+$$1.2841\cdot 10^{-4}$$
+$$6.0248\cdot 10^{-7}$$
+$$1.3518\cdot 10^{-12}$$
+$$8.8818\cdot 10^{-16}$$
+$$0$$
+$$\text{Seems quadratic convergens}$$
+
+\subsection{}
+$p\approx 2$, $k=16$
+
+\subsection{}
+$$z_{k+1}=2z_k-yz_k^2$$
+
+\subsection{}
+$$\frac{1}{4}$$
+
+$$\Phi(z)=2z-yz^2$$
+
+\subsection{}
+$$|\Phi^{''}(\eta)|=|-2y|\le 4$$
+
+
+???
+\subsection{}
+The result is very good.
+
+loop has 2 multiplications ($z=z*(2-y*z)$)
+end of function has 1 ($z=z*x$)
+
+
+\end{document}
