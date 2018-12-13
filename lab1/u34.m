@@ -3,10 +3,10 @@ x = 10.^-(0:0.1:16);
 u = eps() / 2;
 RT = abs(x./2);
 
-if false
+if true
     f1 = (exp(x)-1)./x;
     %RX_f1 = u * ( abs(exp(x)./x) + 2* abs((exp(x)-1)./x) );
-    RX_f1 = u * (abs(1./x + 3))
+    RX_f1 = u * (abs(1./x + 3));
     
     loglog(x, abs(f1-1), x, RX_f1 + RT);
 else
