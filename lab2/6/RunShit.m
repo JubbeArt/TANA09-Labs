@@ -1,4 +1,4 @@
-k = 100;
+k = 22;
 U = CreateSubspace(RefSet, RefAns, k);
 
 rightAnswers = 0;
